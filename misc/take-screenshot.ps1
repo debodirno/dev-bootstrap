@@ -24,8 +24,6 @@ param(
 }
 
 #Function to get the primary monitor resolution.
-#This code is sourced from
-# https://techibee.com/powershell/powershell-script-to-get-desktop-screen-resolution/1615
 
 function Get-ScreenResolution {
  $Screens = [system.windows.forms.screen]::AllScreens
