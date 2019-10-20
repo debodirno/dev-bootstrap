@@ -24,6 +24,8 @@ alias gg='git grep -nw'
 
 alias gl='git log'
 
+alias gmncnff='git merge --no-commit --no-ff'
+
 alias gpl='git pull'
 alias gplr='git pull --rebase'
 alias gplrom='git pull --rebase origin master'
@@ -34,6 +36,4 @@ alias grH='git reset HEAD'
 alias grs='git reset --soft'
 
 alias gs='git status'
-
-alias gmncnff='git merge --no-commit --no-ff'
 
