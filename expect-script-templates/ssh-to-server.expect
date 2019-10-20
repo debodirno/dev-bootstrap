@@ -1,0 +1,19 @@
+#!/usr/bin/expect -f
+
+# SSH to your server
+spawn ssh your_user_name@127.0.0.1
+
+# Wait for the server to ask for your password 
+expect "*assword: "
+send "YOUR_PASSWORD\r"
+
+# Wait for '$' which means, you are in..
+expect "*$ "
+
+# Any command you want to run after you have logged in to the server
+send "echo 'Hello World'\r"
+expect "*$ "
+send "cd Some_Folder\r"
+
+# Finally pass control to user...
+interact
