@@ -4,7 +4,7 @@
 spawn ssh your_user_name@127.0.0.1
 
 # Wait for the server to ask for your password 
-expect "*assword: "
+expect "*assword: "   # Basically, wait for server to ask for password/Password (Change the regex to whatever your server sends)
 send "YOUR_PASSWORD\r"
 
 # Wait for '$' which means, you are in..
@@ -17,3 +17,4 @@ send "cd Some_Folder\r"
 
 # Finally pass control to user...
 interact
+
