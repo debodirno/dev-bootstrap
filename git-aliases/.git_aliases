@@ -35,3 +35,4 @@ alias grs='git reset --soft'
 
 alias gs='git status'
 
+alias gmncnff='git merge --no-commit --no-ff'
